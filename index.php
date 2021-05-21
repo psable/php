@@ -1,7 +1,8 @@
 <?php
 echo "<h1>Hello World from PHP7-FPM</h1>";
 echo 'Version PHP courante : ' . phpversion();
-echo 'Mon hostname est ' .$_ENV["HOSTNAME"] . '!';
+$hostname_perso = getenv ( string $varname , bool $local_only = true) : string|false;
+echo 'Mon hostname est ' .$hostname_perso '!';
 
 
 echo '<pre>';
